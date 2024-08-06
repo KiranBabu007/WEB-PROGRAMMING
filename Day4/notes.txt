@@ -1,0 +1,4 @@
+<thead> contains header information such as column names
+
+<tr> indidiual table row
+
