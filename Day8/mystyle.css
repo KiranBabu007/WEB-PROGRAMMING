@@ -1,0 +1,17 @@
+h1{
+    font-family: sans-serif; color: orange;
+}
+
+b{
+    color: chartreuse;
+}
+
+p{
+    background-color: deepskyblue;
+    color: aliceblue;
+}
+
+ul li{
+    text-decoration: none;
+    color: black;
+}
