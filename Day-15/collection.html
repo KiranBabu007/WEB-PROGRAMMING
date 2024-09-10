@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="">
+        <fieldset>
+
+       
+        <legend>Links-Collection</legend>
+        <a href="google.com">Google</a>&nbsp;&nbsp;&nbsp;
+        <a href="bing.com">Bing</a>&nbsp;&nbsp;&nbsp;
+        <a href="ebay.com">E-Bay</a>&nbsp;&nbsp;&nbsp;
+        <a href="sjcet.com">SJCET</a>&nbsp;&nbsp;&nbsp; <br><br>
+
+        <input type="button" value="Get Links" onclick="getLinks()">
+
+        <div id="divDisplay" >
+        </fieldset>
+        </div>
+    </form>
+
+    <script>
+        const divdisplay=document.getElementById("divDisplay");
+
+        const getLinks=()=>{
+            divdisplay.textContent ='Total Links: '+document.links.length +' <br>';
+            
+            for(i=0;i<document.links.length;i++){
+                divdisplay.textContent+='Link URL: '+document.links[i].href+' <br>'
+                divdisplay.textContent+='Link Text: '+document.links[i].textContent+' <br>'
+                
+
+            }
+        }
+    </script>
+</body>
+</html>

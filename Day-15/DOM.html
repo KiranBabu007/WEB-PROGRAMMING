@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>Javascript HTML DOM</h2>
+
+    <h3>Remove an Html ELEMENT</h3>
+
+    <div id="div1">
+        <p id="p1">para 1</p>
+        <p id="p2">para 2</p> 
+    </div>
+         <button onclick="myfun()">Remove Element</button>
+    <script>
+        const myfun=()=>{
+        // document.getElementById("p1").remove()
+        document.getElementById('p2').textContent="New p2"
+        } 
+
+        const parent = document.getElementById("div1")
+        const child = document.getElementById("p1")
+
+        const para = document.createElement("p")
+        const node =document.createTextNode("This is new para")
+
+        para.appendChild(node)
+        parent.replaceChild(para,child)
+    </script>
+</body>
+</html>
